@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+        <header>
+            <section>
+                <a href="index.html">
+                    <h1>Traveller</h1>
+                </a>
+            </section>
+            <nav class="box__redes">
+                <a href="https://www.instagram.com" target="_blank" rel="external">
+                    <i class="fab fa-instagram redes__icone"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="external">
+                    <i class="fab fa-facebook redes__icone"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="external">
+                    <i class="fab fa-twitter redes__icone"></i>
+                </a>
+            </nav>
+        </header>
+    
+        <main class="container">
+            <section>
+                                <h2>Ponto Turístico</h2>
+                <strong>* Obrigátório</strong>
+            </section>
+    
+            <Form name="ponto__turistico" id="ponto__turistico" action="" method="post">
+                <article class="campos">
+                    <section>
+                        <label for="nome">Nome do ponto turístico
+                            <strong>*</strong>
+                        </label>
+                        <input type="text" id="nome" autofocus required placeholder="ex: Museu do Futebol">
+                    </section>
+    
+                    <section>
+                        <label for="descricao">Descrição
+                            <strong>*</strong>
+                        </label>
+                        <textarea id="descricao" required placeholder="Descreva o Ponto Turístico para exibição na página">
+                        </textarea>
+                    </section>
+                </article>
+    
+                <section>
+                    <hr>
+                    <h3>Contato</h3>
+                </section>
+    
+                <article class="campos contato">
+                    <section class="em__linha">
+                        <label for="telefone">Telefone
+                            <strong>*</strong>
+                        </label>
+    
+                        <label for="email">E-mail
+                            <strong>*</strong>
+                        </label>
+    
+                        <label for="site">Site</label>
+                    </section>
+    
+                    <section class="em__linha">
+                        <input type="tel" id="telefone" required placeholder="(xx) xxxx-xxxx" minlength="10" maxlength="10">
+    
+                        <input type="email" id="email" required placeholder="pontoturistico@email.com">
+    
+                        <input type="url" id="site" placeholder="https://www.pontoturistico.com.br">
+                    </section>
+    
+                    <section class="em__linha">
+                        <label for="whatsapp">Whatsapp</label>
+    
+                        <label for="facebook">Facebook</label>
+    
+                        <label for="instagram">Instagram</label>
+                    </section>
+    
+                    <section class="em__linha">
+                        <input type="tel" id="whatsapp" placeholder="(xx) 9xxxx-xxxx" minlength="11" maxlength="11">
+    
+                        <input type="url" id="facebook" placeholder="https://facebook.com/pontoturistico">
+    
+                        <input type="url" id="instagram" placeholder="https://www.instagram.com/pontoturistico">
+                    </section>
+                </article>
+    
+                <section>
+                    <hr>
+                    <h3>Local</h3>
+                </section>
+    
+                <article class="campos">
+                    <section class="cep__label">
+                        <label for="cep">CEP
+                            <strong>*</strong>
+                        </label>
+    
+                        <input type="text" id="cep" required placeholder="00000-000" minlength="8" maxlength="8">
+    
+                        <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" class="link" target="_blank"
+                            rel="external">Não sabe o cep?</a>
+                    </section>
+    
+                    <section class="em__linha">
+                        <label for="endereco">Endereço
+                            <strong>*</strong>
+                        </label>
+    
+                        <label for="numero">Número
+                            <strong>*</strong>
+                        </label>
+    
+                        <label for="complemento">Complemento</label>
+                    </section>
+    
+                    <section class="em__linha">
+                        <input type="text" id="endereco" required placeholder="ex: Praça Charles Miler">
+    
+                        <input type="text" id="numero" required placeholder="ex: 1234">
+    
+                        <input type="text" id="complemento">
+                    </section>
+    
+    
+                    <section class="em__linha">
+                        <label for="bairro">Bairro
+                            <strong>*</strong>
+                        </label>
+    
+                        <label for="cidade">Cidade
+                            <strong>*</strong>
+                        </label>
+    
+                        <label for="estado">Estado
+                            <strong>*</strong>
+                        </label>
+                    </section>
+    
+                    <section class="em__linha">
+                        <input type="text" id="bairro" required placeholder="ex: Pacaembu">
+    
+                        <input type="text" id="cidade" required placeholder="ex: São Paulo">
+    
+                        <input list="uf" id="estado" required placeholder="Ex: SP" minlength="2" maxlength="2">
+                        <datalist id="uf">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </datalist>
+                    </section>
+    
+                    <article>
+                        <p class="local__tit">Localização</p>
+    
+                        <section class="descricao__mapa">
+                            <p>Clique em
+                                <a href="https://www.google.com/maps/place/Museu+do+Futebol/@-23.547692,-46.665136,17z/data=!4m5!3m4!1s0x0:0xcfdec9e87c999ece!8m2!3d-23.   547692!4d-46.6651364?hl=pt-BR"
+                                    target="_blank" rel="external" class="link">visualizar mapa ampliado
+                                </a>
+                                para encontrar sua localização!</p>
+                        </section>
+    
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.8061355749685!2d-46.66566372363319!3d-23.546443942653415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5825daacb07f%3A0xcfdec9e87c999ece!2sMuseu%20do%20Futebol!5e0!3m2!1spt-BR!2sbr!4v1631793754295!5m2!1spt-BR!2sbr"
+                            loading="fast" id="localizacao">
+                        </iframe>
+                    </article>
+                </article>
+    
+                <section>
+                    <hr>
+                    <h3>Galeria de Fotos</h3>
+                </section>
+    
+                <article class="campos fotos">
+                    <p>
+                        Selecione ao menos 1 arquivo de imagem do ponto turístico para exibição
+                        <strong>*</strong>
+                    </p>
+    
+                    <section class="foto em__linha">
+                        <label for="selecao-arquivo1">Selecionar um arquivo 1 &#187;</label>
+                        <input type="file" id="selecao-arquivo1" required>
+    
+                        <label for="selecao-arquivo2">Selecionar um arquivo 2 &#187;</label>
+                        <input type="file" id="selecao-arquivo2">
+    
+                        <label for="selecao-arquivo3">Selecionar um arquivo 3 &#187;</label>
+                        <input type="file" id="selecao-arquivo3">
+                    </section>
+                </article>
+    
+                <section>
+                    <hr>
+                    <h3>Funcionamento</h3>
+                </section>
+    
+                <article class="funcionamento">
+                    <section class="titulos">
+                        <p>Dias e Horários</p>
+                        <p>Valor do Ingresso</p>
+                    </section>
+    
+                    <article class="container__funcionamento">
+                        <div class="em__linha dh">
+                            <div class="em__coluna">
+                                <p class="subtitulos">
+                                    Dias da Semana
+                                </p>
+    
+                                <section>
+                                    <input type="checkbox" name="dias__semana" id="domingo" value="1">
+                                    <label for="domingo">Domingo</label>
+                                </section>
+    
+                                <section>
+                                    <input type="checkbox" name="dias__semana" id="segunda" value="2">
+                                    <label for="segunda">Segunda-feira</label>
+                                </section>
+    
+                                <section>
+                                    <input type="checkbox" name="dias__semana" id="terca" value="3">
+                                    <label for="terca">Terça-feira</label>
+                                </section>
+    
+                                <section>
+                                    <input type="checkbox" name="dias__semana" id="quarta" value="4">
+                                    <label for="quarta">Quarta-feira</label>
+                                </section>
+    
+                                <section>
+                                    <input type="checkbox" name="dias__semana" id="quinta" value="5">
+                                    <label for="quinta">Quinta-feira</label>
+                                </section>
+    
+                                <section>
+                                    <input type="checkbox" name="dias__semana" id="sexta" value="6">
+                                    <label for="sexta">Sexta-feira</label>
+                                </section>
+    
+                                <section>
+                                    <input type="checkbox" name="dias__semana" id="sabado" value="7">
+                                    <label for="sabado">Sábado</label>
+                                </section>
+                            </div>
+    
+                            <div class="em__coluna">
+                                <p class="subtitulos">
+                                    Início
+                                </p>
+                                <input type="time" id="hora__inicio__dom">
+                                <input type="time" id="hora__inicio__seg">
+                                <input type="time" id="hora__inicio__ter">
+                                <input type="time" id="hora__inicio__qua">
+                                <input type="time" id="hora__inicio__qui">
+                                <input type="time" id="hora__inicio__sexta">
+                                <input type="time" id="hora__inicio__sab">
+                            </div>
+    
+                            <div class="em__coluna">
+                                <p class="subtitulos">
+                                    Fim
+                                </p>
+                                <input type="time" id="hora__fim__dom">
+                                <input type="time" id="hora__fim__seg">
+                                <input type="time" id="hora__fim__ter">
+                                <input type="time" id="hora__fim__qua">
+                                <input type="time" id="hora__fim__qui">
+                                <input type="time" id="hora__fim_sexta">
+                                <input type="time" id="hora__fim__sab">
+                            </div>
+                        </div>
+    
+                        <div class="em__linha valores">
+                            <div class="em__coluna">
+                                <p class="subtitulos">
+                                    Criança
+                                </p>
+                                <input type="text" id="valor__crianca__dom" value="| R$ ">
+                                <input type="text" id="valor__crianca__seg" value="| R$ ">
+                                <input type="text" id="valor__crianca__ter" value="| R$ ">
+                                <input type="text" id="valor__crianca__qua" value="| R$ ">
+                                <input type="text" id="valor__crianca__qui" value="| R$ ">
+                                <input type="text" id="valor__crianca__sexta" value="| R$ ">
+                                <input type="text" id="valor__crianca__sab" value="| R$ ">
+                            </div>
+    
+                            <div class="em__coluna">
+                                <p class="subtitulos">
+                                    Adulto
+                                </p>
+                                <input type="text" id="valor__adulto__dom" value="| R$ ">
+                                <input type="text" id="valor__adulto__seg" value="| R$ ">
+                                <input type="text" id="valor__adulto__ter" value="| R$ ">
+                                <input type="text" id="valor__adulto__qua" value="| R$ ">
+                                <input type="text" id="valor__adulto__qui" value="| R$ ">
+                                <input type="text" id="valor__adulto__sexta" value="| R$ ">
+                                <input type="text" id="valor__adulto__sab" value="| R$ ">
+                            </div>
+    
+                            <div class="em__coluna">
+                                <p class="subtitulos">
+                                    Idoso
+                                </p>
+                                <input type="text" id="valor__idoso__dom" value="|R$">
+                                <input type="text" id="valor__idoso__seg" value="|R$">
+                                <input type="text" id="valor__idoso__ter" value="|R$">
+                                <input type="text" id="valor__idoso__qua" value="|R$">
+                                <input type="text" id="valor__idoso__qui" value="|R$">
+                                <input type="text" id="valor__idoso__sexta" value="|R$">
+                                <input type="text" id="valor__idoso__sab" value="|R$">
+                            </div>
+                        </div>
+                    </article>
+                </article>
+    
+                <section>
+                    <hr>
+                    <h3>Informações Adicionais</h3>
+                </section>
+    
+                <article class="informacoes__adicionais">
+                    <div class="a">
+                        <section>
+                            <label for="" class="perguntas">Disponível no feriado?
+                                <strong>*</strong>
+                            </label>
+    
+                            <input type="radio" name="disponibilidade" id="sim__disponivel" required value="1">
+                            <label for="sim__disponivel">Sim</label>
+    
+                            <input type="radio" name="disponibilidade" id="nao__disponivel" required value="0">
+                            <label for="nao__disponivel">Não</label>
+                        </section>
+    
+                        <section>
+                            <label for="" class="perguntas">É permitido crianças?
+                                <strong>*</strong>
+                            </label>
+    
+                            <input type="radio" name="criancas" id="criancas__sim" required value="1">
+                            <label for="criancas__sim">Sim</label>
+    
+                            <input type="radio" name="criancas" id="criancas__nao" required value="0">
+                            <label for="criancas__nao">Não</label>
+                        </section>
+    
+                        <section>
+                            <label for="" class="perguntas">Possui comercio de alimentos no local?
+                                <strong>*</strong>
+                            </label>
+    
+                            <input type="radio" name="alimentos" id="alimentos__sim" required value="1">
+                            <label for="alimentos__sim">Sim</label>
+    
+                            <input type="radio" name="alimentos" id="alimentos__nao" required value="0">
+                            <label for="alimentos__nao">Não</label>
+                        </section>
+    
+                        <section>
+                            <label for="" class="perguntas">Possui acessibilidade para pessoas especiais?
+                                <strong>*</strong>
+                            </label>
+    
+                            <input type="radio" name="acessibilidade" id="acessibilidade__sim" required value="1">
+                            <label for="acessibilidade__sim">Sim</label>
+    
+                            <input type="radio" name="acessibilidade" id="acessibilidade__nao" required value="0">
+                            <label for="acessibilidade__nao">Não</label>
+                        </section>
+    
+                        <section>
+                            <label for="" class="perguntas">Estacionamento Dísponivel?
+                                <strong>*</strong>
+                            </label>
+    
+                            <input type="radio" name="estacionamento" id="estacionamento__sim" required value="1">
+                            <label for="estacionamento__sim">Sim</label>
+                            <input type="radio" name="estacionamento" id="estacionamento__nao" required value="0">
+                            <label for="estacionamento__nao">Não</label>
+                        </section>
+                    </div>
+    
+                    <div class="b">
+                        <section>
+                            <label for="numero__pessoas" class="perguntas">É suportado até quantas pessoas no
+                                mesmo horário?
+                                <strong>*</strong>
+                            </label>
+    
+                            <input type="number" name="numero__pessoas" id="numero__pessoas" required min="0">
+                        </section>
+    
+                        <section>
+                            <label for="" class="perguntas">Formas de pagamento disponiveis
+                                <strong>*</strong>
+                            </label>
+    
+                            <input type="checkbox" name="pagamento" id="debito" value="1">
+                            <label for="debito">Débito</label>
+    
+                            <input type="checkbox" name="pagamento" id="credito" value="2">
+                            <label for="credito">Crédito</label>
+    
+                            <input type="checkbox" name="pagamento" id="dinheiro" value="3">
+                            <label for="dinheiro">Dinheiro</label>
+                        </section>
+    
+                        <div class="em__coluna">
+                            <label for="duracao">Duração sugerida de turismo</label>
+    
+                            <label for="de">De:</label>
+                            <input type="time" id="de">
+    
+                            <label for="ate">Até:</label>
+                            <input type="time" id="ate">
+                        </div>
+                    </div>
+                </article>
+    
+                <div class="botao">
+                    <button type="submit">Enviar</button>
+                </div>
+            </Form>
+        </main>
+    </body>

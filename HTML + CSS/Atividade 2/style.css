@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.746);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Asap', sans-serif;
+    background-color: #777;
+    background-image: url(../images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+header a{
+    text-decoration: none;
+    color: #2b92d6;
+    font-size: 30px;
+    margin: 0 10px;
+}
+h1:hover, header a:hover{
+    color: #2b92d663;
+}
+.container{
+    width: 70%;
+    margin:-10px auto 20px ;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.novo{
+    text-transform: uppercase;
+    margin: 0px 25px;
+    font-weight: bold;
+}
+hr{
+    margin: 20px 0px;
+}
+h2{
+    text-transform:uppercase;
+    margin: 5px;
+}
+strong, .link{
+    text-decoration: none;
+    color: rgb(184, 38, 38);
+    font-size: 14px;
+    font-weight: 700;
+}
+.campos{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    color: #555;
+}
+.campos input, textarea{
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+input{
+    font-family: 'Asap', sans-serif;
+    margin-bottom: 15px;
+    outline: none;
+}
+input:focus, textarea:focus{
+    border: 0;
+    outline: 1px solid #2b92d6;
+    box-shadow: 1px 1px 5px 1px #000;
+}
+textarea{
+    font-family: 'Asap', sans-serif;
+    height: 150px;
+    resize: none;
+    outline: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.campos .em__linha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.campos .em__linha label,.campos .em__linha input, #cep{
+    width: 30%;
+}
+.campos label{
+    display: block;
+}
+.local__tit{
+    margin: 10px 0;
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+}
+.descricao__mapa {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.descricao__mapa a{
+    font-weight: 600;
+    font-size: 14px;
+    color: #2b92d6;
+    font-weight: 600;
+    margin: 0 3px;
+}
+.descricao__mapa a:hover{
+    color: #2b92d69b;
+}
+iframe{
+    margin: 10px 0px;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+input[type='file'] {
+    display: none;
+} 
+.foto label {
+    background-color: #2b92d6;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    padding: 13px 50px;
+    margin: 10px;
+}
+.foto label:hover {
+    cursor: pointer;
+    background-color: #2b92d6a2;
+}
+.funcionamento{
+    display: flex;
+    flex-direction: column;
+}
+.funcionamento .titulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.funcionamento .subtitulos{
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    font-weight: 900;
+}
+.container__funcionamento{
+    color: #555;
+    display: flex;
+    flex-direction: row;
+}
+.container__funcionamento input[type="text"]{
+    width: 85%;
+}
+.dh, .valores, .a, .b{
+    width: 50%;
+    padding: 0 15px;
+   
+}
+.dh{
+    border-right: 1px solid #aaa;
+}
+.container__funcionamento .em__linha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.em__coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+input[type='time']{
+    width: 100px;
+}
+.informacoes__adicionais{
+    color: #555;
+    display: flex;
+    flex-direction: row;
+}
+.perguntas{
+    display: block;
+}
+.informacoes__adicionais input[type='time'], input[type='number']{
+    width: 50%;
+}
+.informacoes__adicionais input[type='radio']{
+    margin-left: 10px;
+}
+#credito, #dinheiro{
+    margin-left: 15px;
+}
+.a{
+    border-right: 1px solid #aaa;
+}
+.b{
+    padding-left: 40px;
+}
+.botao{
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b92d6;
+    color: #fff;
+    border: 0;
+    box-shadow: 1px 1px 5px 1px#000;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #2b92d6a2;
+    border: 1px solid #fff;
+}
